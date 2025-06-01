@@ -4,8 +4,8 @@ This repository presents a comprehensive analysis of urban fire patterns in İzm
 
 ## Research Questions
 
-1. What are the temporal and spatial patterns of fire incidents in İzmir in 2023, and how do socioeconomic indicators (e.g., income levels, building types) influence fire incident rates?
-2. Can machine learning techniques be used to forecast daily fire incident counts based on spatial, temporal, and urban features?
+1. What are the seasonal, geographical, and causal patterns of fire incidents in İzmir during 2023, and how are these patterns influenced by socioeconomic indicators such as neighborhood income levels and building structures?
+2. Can a machine learning model be developed to accurately predict the daily number of fire incidents in İzmir, using spatial, temporal, and structural characteristics?
 
 ## Methods Overview
 
@@ -17,9 +17,10 @@ This repository presents a comprehensive analysis of urban fire patterns in İzm
 ## Key Findings
 
 - Fire response times significantly vary between districts (Kruskal-Wallis p < 0.0001), indicating spatial inequality.
-- A tuned Random Forest Regressor achieved an **R² of 0.759**, predicting daily fire counts with strong accuracy.
+- A tuned Random Forest Regressor achieved **R² = 0.741** on the test set, and **cross-validated R² = 0.759**, showing strong predictive performance.
 - **Top predictive features**: `top_ilce_fire_count`, `month`, and `top_building_type`
 - Resulting insights support more equitable and proactive emergency service planning.
+
 
 ## How to Run
 
